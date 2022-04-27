@@ -1,0 +1,404 @@
+@import url('http://fonts.cdnfonts.com/css/dekiru');
+/* font-family: 'dekiru','san serif'; */
+@import url('http://fonts.cdnfonts.com/css/adam');
+/*font-family: 'Adam', sans-serif;*/
+
+* {
+    font-family: 'adam', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #52633b;
+    --color2: #aca49a;
+    --color3: #908b83;
+    --color4: #ebebeb;
+}
+
+
+body {
+    background-image: linear-gradient(to right, #aca49a, #bbb0aa, #c7bcbb, #d1cacc, #dbd8da, #dbd8da, #dbd8da, #dbd8da, #d1cacc, #c7bcbb, #bbb0aa, #aca49a);
+    border: 1px solid var(--color3);
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+
+.header-color {
+    background-color: var(--color3);
+    padding: 2vh 0;
+}
+.logo {
+    animation: logo 1s;
+}
+
+.kyomu {
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: var(--color1);
+    font-family: 'dekiru', 'san-serif';
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.bonsai {
+    margin-left: -1rem;
+    color: var(--color4);
+    font-family: 'dekiru', 'san-serif';
+    font-weight: 100;
+}
+
+.dropdown-menu {
+    background-color: var(--color3);
+}
+
+.dropdown-item:hover,
+.navbar-nav a:hover {
+    background-color: var(--color2);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    opacity: 0.6;
+}
+
+/* INICIO */
+
+.portada__titulo {
+    padding: 5vh 0;
+
+}
+
+.sec-central-inicio {
+    background-color: var(--color2);
+}
+
+.sec-central-inicio  {
+    animation: slide-in-right 2s;
+}
+
+.sec-central-inicio a {
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+.sec-central-inicio a:hover {
+    color: #000000;
+}
+
+.sec-central-inicio img:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+/* inicio accordion */
+
+.accordion-button {
+    background-color: var(--color2);
+    border-bottom: 1px solid #00000057;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: var(--color3);
+}
+
+.accordion-item {
+    background-color: var(--color4);
+    border-color: var(--color2);
+    font-weight: bolder;
+}
+
+.accordion-button:focus {
+    border-color: var(--color2);
+    box-shadow: var(--color3);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+
+/* nosotos */
+
+.portadaNos-img, .nuestraMision h2 {
+    animation: slide-in-left  2s;
+}
+
+#quienesSomos h1, .NuestraFilosofia  h2 {
+    animation:slide-in-right 2s;
+}
+#quienesSomos {
+    border-bottom: 1px solid var(--color2);
+}
+
+.background {
+    background-color: var(--color4);
+}
+
+.frase {
+    background-color: var(--color2);
+}
+ 
+
+.contenedor-nosotros h1:hover,
+.contenedor-nosotros h2:hover {
+    color: var(--color3);
+}
+
+
+/* escuela */
+
+.portada_escuela__texto {
+    animation:slide-in-left 2s
+}
+.CyT_titulo {
+    background-color: var(--color2);
+}
+.seccionCentral_escuela {
+    border-bottom: 1px solid var(--color2);
+}
+
+.sec_central_escuela_parrafo {
+    background-color: var(--color4);
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.sec_central_escuela-nav ul {
+    margin-top: 3rem;
+    animation-name: slide-in-right;
+    animation-duration: 1s;
+    padding-left: 0;
+}
+
+.sec_central_escuela-nav ul li {
+    background-color: rgb(127, 118, 111);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.sec_central_escuela-nav ul li a {
+    opacity: 0.8;
+}
+
+.sec_central_escuela-nav ul li:hover {
+    background-color: rgb(144, 139, 131);
+}
+
+.sec_central_escuela-nav ul li:hover a {
+    color: rgb(235, 235, 235);
+}
+
+/* tienda */
+
+.tienda_kyomu {
+    background-color: var(--color2);
+margin: auto;
+} 
+.galeria__img {
+    border: 1px solid var(--color2);
+}
+.galeria__img h2 {
+    position: absolute;
+    font-size: 1rem;
+}
+
+
+ /* formulario */
+
+ .form-box {
+     background-color:var(--color2);
+     width: 50%;
+ }
+
+ .form .button {
+    background-color: rgb(144, 139, 131);
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--color2);
+    margin: 10rem 0 0 0;
+}
+
+.footer i {
+    font-size: 2.5rem;
+    opacity: 0.5;
+    animation: bounce-in-top 1s;
+}
+
+.footer i:hover {
+    color: blanchedalmond;
+}
+
+.footer a:hover {
+    color: blanchedalmond;
+}
+
+.copy {
+    background-color: var(--color3);
+}
+@keyframes logo {
+    from {
+        transform: scale(0.8);
+        transform-origin: center center;
+        animation-timing-function: ease-out
+    }
+
+
+    to {
+        transform: scale(1);
+        animation-timing-function: ease-out
+    }
+}
+
+
+@keyframes bounce-in-top {
+    0% {
+        transform: translateY(-50px);
+        animation-timing-function: ease-in;
+        opacity: 0
+    }
+
+ 
+    30% {
+        transform: translateY(-65px);
+        animation-timing-function: ease-in
+    }
+
+    72% {
+        transform: translateY(0);
+        animation-timing-function: ease-out
+    }
+
+    81% {
+        transform: translateY(-28px);
+        animation-timing-function: ease-in
+    }
+
+    90% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out
+    }
+
+    95% {
+        transform: translateY(-15px);
+        animation-timing-function: ease-in
+    }
+
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+@media (min-width:320px) and (max-width:576px) {
+    .sec-central-inicio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec-central-inicio a {
+        font-size: 1.5rem;
+    }
+
+    .responsivew90 {
+        width: 90% !important;
+    }
+    .carousel-caption h1, 
+    .carousel-caption h2 {
+        display: none;
+    }
+    .NM-NF {
+        flex-direction: column;
+    }
+    .QS {
+        flex-direction: column;
+    }
+    .portada_escuela__texto {
+        margin-left:10px;
+        width: 130%;
+    }
+    .portada_escuela__texto p {
+        margin: 0px;
+        font-size: 12px;
+
+    }
+}
+
+@media(min-width:320px) and (max-width:768px){
+
+    #nuestraFilosofia {
+        border-top: 1px solid var(--color2);
+    }
+    .sec_central_escuela_parrafo{
+        margin: 0px;
+    }
+    .sec_cent-escuela {
+        flex-direction: column;
+    }
+    .sec_central_escuela-nav ul {
+        margin: 0;
+    }
+    .form-box {
+        width: 100%;
+    }
+    footer iframe {
+        display: none;
+    }
+  .footer address {
+        display: none!important;
+    }
+
+    .footer ul {
+        width: 100%;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:3000px){
+
+    .portada_escuela__texto p  {
+        font-size: 1.4rem;
+    }
+    .sec_central_escuela_parrafo {
+        width: 50%;
+    }
+    .sec_central_escuela-nav {
+        width: 50%;
+    }
+ }
+

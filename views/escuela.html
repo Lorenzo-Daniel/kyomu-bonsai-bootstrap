@@ -9,120 +9,173 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>escuela</title>
 </head>
 
-<body>
-    <div class="contenedorGeneral">
-        <header>
-            <nav class="top_nav">
+<body class="container-xxl  p-0">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+            <div class="container-fluid header-color">
                 <div class="logo">
                     <a href="../index.html">
-                        <p>
-                            Kyomu
-                            <span>
+                        <p class="kyomu text-left">
+                            kyomu
+                            <span class="bonsai">
                                 bonsai
                             </span>
                         </p>
                     </a>
                 </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <ul>
-                    <li>
-                        <a href="../index.html"> inicio</a>
-                    </li>
-                    <li> <a href="./nosotros.html">nosotros</a>
-                        <ul>
-                            <li>
-                                <a href="./nosotros.html#quienesSomos">quienes somos</a>
-                            </li>
-                            <li>
-                                <a href="./nosotros.html#nuestraMision">nuestra mision</a>
-                            </li>
-                            <li>
-                                <a href="./nosotros.html#nuestraFilosofia">filosofia</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./escuela.html">escuela</a>
-                    </li>
-                    <li>
-                        <a href="./tienda.html">tienda</a>
-                        <ul>
-                            <li>
-                                <a href="./tienda.html#arboles">arboles</a>
-                            </li>
-                            <li>
-                                <a href="./tienda.html#macetas">macetas</a>
-                            </li>
-                            <li>
-                                <a href="./tienda.html#herramientas">herramientas</a>
-                            </li>
-                            <li>
-                                <a href="./tienda.html#sustratos">sustratos</a>
-                            </li>
-                            <li>
-                                <a href="./tienda.html#abonos">abonos</a>
-                            </li>
-                            <li>
-                                <a href="./tienda.html#fitosanitarios">fitosanitarios</a>
-                            </li>
-                            <li>
-                                <a href="./tienda.html#mesas">mesas</a>
-                            </li>
-                            <li>
-                                <a href="./tienda.html#libros">libros</a>
-                            </li>
-                            <li>
-                                <a href="./tienda.html#servicios">servicios</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./contacto.html">contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+                <div class="collapse navbar-collapse 
+                    justify-content-end" id="navbarNavDropdown">
 
-
-
-
-
-        <!-- Aun no hay contenido definido, es meramente ilustrativo -->
-
-        <main>
-            <section class="portada_escuela">
-                <div class="portada_escuela__texto">
-                    <p>
-                        No pienses que no pasa nada, simplemente
-                    </p>
-                    <p>
-                        porque no ves el crecimiento
-                    </p>
-                   
-                    <p>
-                        Las grandes cosas crecen en silencio
-                    </p>
+                    <ul class="navbar-nav w-75 justify-content-between mx-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link 
+                                dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Nosotros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item" href="./nosotros.html#quienesSomos">
+                                        Quienes somos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./nosotros.html#nuestraFilosofia">
+                                        Nuestra filosofia
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./nosotros.html#nuestraMision">
+                                        Nuestro compromiso
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./escuela.html">
+                                escuela
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tienda
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item" href="./tienda.html#arboles">
+                                        arboles
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./tienda.html#macetas">
+                                        macetas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./tienda.html#herramientas">
+                                        herramientas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./tienda.html#abonos">
+                                        abonos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./tienda.html#sustratos">
+                                        Sustratos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./tienda.html#libros">
+                                        libros
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./tienda.html#mesas">
+                                        mesas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./tienda.html#servicios">
+                                        servicios
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./tienda.html#fitosanitarios">
+                                        fitosanitarios
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <img src="../assets/img/estilos/escuela/talleres.png" alt="">
-            </section>
-
-            <section class="seccionCentral_escuela">
-                <div class="CyT_titulo">
-                    <h1>
-                        CURSOS Y TALLERES
-                    </h1>
-                </div>
+            </div>
+        </nav>
+    </header>
 
 
-                <div class="sec_central_escuela_parrafo">
-                    <h2>Lorem ipsum dolor sit.</h2>
+
+
+
+    <!-- Aun no hay contenido definido, es meramente ilustrativo -->
+
+    <main >
+        <section class="d-flex justify-content-between align-items-center portada_escuela">
+            <div class=" flex-fill text-center d-flex-column  
+                portada_escuela__texto  ">
+                <p>
+                    No pienses que no pasa nada, simplemente
+                </p>
+                <p>
+                    porque no ves el crecimiento
+                </p>
+
+                <p>
+                    Las grandes cosas crecen en silencio
+                </p>
+            </div>
+            <div class="">
+                <img class="w-100 " src="../assets/img/estilos/escuela/talleres.png" alt="">
+            </div>
+        </section>
+
+        <section>
+            <div class=" d-flex justify-content-center py-4 CyT_titulo">
+                <h1 class="m-0">
+                    CURSOS Y TALLERES
+                </h1>
+            </div>
+
+            <div class="d-flex flex-md-row flex-sm-column sec_cent-escuela">
+                <div class=" d-flex-column 
+                    align-items-center p-5  sec_central_escuela_parrafo">
+                    <h2>Nuestros cursos</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi praesentium voluptatum facilis,
                         sed ullam facere aperiam dicta, provident beatae ad quasi quo eaque.
@@ -132,11 +185,16 @@
                         soluta harum. Voluptates repellat ratione illo, animi deleniti ut sapiente quaerat molestiae est
                         saepe, quam sunt laboriosam quas veritatis dignissimos tempora, hic voluptatum sint qui mollitia
                     </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, quibusdam aperiam ab temporibus impedit unde illo esse, dolorum a numquam dolor assumenda suscipit. Quos quibusdam, accusamus nam fugit aspernatur velit deserunt aperiam cupiditate earum! Nobis voluptate repellat, maxime, iusto tempore quibusdam provident natus modi consectetur nesciunt itaque nisi necessitatibus amet.
+                    </p>
                 </div>
-                <nav class="sec_central_escuela-nav">
-                    <ul>
+                <nav class="  d-flex 
+                    justify-content-center mt-5 
+                    sec_central_escuela-nav">
+                    <ul class="w-75 list-unstyled">
                         <li>
-                            <a href="#">Bonsai avanzado</a>
+                            <a  href="#">Bonsai avanzado</a>
                         </li>
                         <li>
                             <a href="#">Filosofia oriental</a>
@@ -155,69 +213,68 @@
                         </li>
                     </ul>
                 </nav>
-            </section>
-        </main>
+            </div>
+        </section>
+    </main>
 
 
 
-        <!-- footer -->
-        <footer class=" row  justify-content-evenly py-4 footer">
+    <!-- footer -->
+    <footer class=" row justify-content-evenly py-4 footer">
 
-            <ul class="col-4 list-unstyled d-flex justify-content-evenly align-items-end">
-                <li>
-                    <a href="https://wa.me/+59896299090" target="_blank" title="whatsapp">
-                        <i class="fa-brands fa-whatsapp-square"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com" target="_blank" title="instagram">
-                        <i class="fa-brands fa-instagram-square"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com" target="_blank" title="facebook">
-                        <i class="fa-brands fa-facebook-square"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com" target="_blank" title="youtube">
-                        <i class="fa-brands fa-youtube-square"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:noemail@gmail.com" target="_blank" title="gmail">
-                        <i class="fa-solid fa-square-envelope"></i>
-                    </a>
-                </li>
-            </ul>
-    
-            <address class="col-4 d-flex justify-content-center align-items-end">
-                <p class="m-0"> Av. Sin Nombre 555 <br>
-                    Parque Rodo <br>
-                    Montevideo, Uruguay. <br>
-                    Telefono: 555 555 555 <br>
-                    e-mail: <a href="mailto:noemail@gmail.com"> noemail@gmail.com </a> <br>
-                </p>
-            </address>
-    
-            <iframe class="col-4 mb-2"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6543.3778420273775!2d-56.17235532155763!3d-34.914255373760234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81a4e4e649a1%3A0xeeee2dc3874fb014!2sParque%20Rod%C3%B3%2C%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguay!5e0!3m2!1ses-419!2sbr!4v1648256069660!5m2!1ses-419!2sbr"
-                width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </footer>
-        <address class="copy row text-center d-flex 
-            align-items-center m-0">
-            <p class="m-0">
-                &#169; Copyrigth. Todos los derechos reservados
+        <ul class="col-4 list-unstyled d-flex justify-content-evenly align-items-end">
+            <li>
+                <a href="https://wa.me/+59896299090" target="_blank" title="whatsapp">
+                    <i class="fa-brands fa-whatsapp-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com" target="_blank" title="instagram">
+                    <i class="fa-brands fa-instagram-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com" target="_blank" title="facebook">
+                    <i class="fa-brands fa-facebook-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank" title="youtube">
+                    <i class="fa-brands fa-youtube-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:noemail@gmail.com" target="_blank" title="gmail">
+                    <i class="fa-solid fa-square-envelope"></i>
+                </a>
+            </li>
+        </ul>
+
+        <address class="col-4 d-flex justify-content-center align-items-end direccion">
+            <p class="m-0"> Av. Sin Nombre 555 <br>
+                Parque Rodo <br>
+                Montevideo, Uruguay. <br>
+                Telefono: 555 555 555 <br>
+                e-mail: <a href="mailto:noemail@gmail.com"> noemail@gmail.com </a> <br>
             </p>
         </address>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/
-            dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous">
-        </script>
-    </body>>
+
+        <iframe class="col-4 mb-2 "
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6543.3778420273775!2d-56.17235532155763!3d-34.914255373760234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81a4e4e649a1%3A0xeeee2dc3874fb014!2sParque%20Rod%C3%B3%2C%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguay!5e0!3m2!1ses-419!2sbr!4v1648256069660!5m2!1ses-419!2sbr"
+            width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </footer>
+    <address class="copy row text-center d-flex 
+            align-items-center m-0">
+        <p class="m-0">
+            &#169; Copyrigth. Todos los derechos reservados
+        </p>
+    </address>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
